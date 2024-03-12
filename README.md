@@ -5,12 +5,15 @@ Backend made of:
 
 - Node
 - Express
-- Moongose
+- Mongo
+- Mongoose
 
-## How to use
-### Install mongo on Docker
+## Setup
+Follow the next configurations to setup correctly
+### Install Mongo on Docker container
 ```
 docker pull mongo
 docker run --name mongo-db -d -p 27017:27017 mongo
 docker ps
 ```
+Once the container is running create the database and the collection. Their names are in .env.local file
