@@ -16,4 +16,7 @@ docker pull mongo:5.0
 docker run --name mongo-db -d -p 27017:27017 mongo
 docker ps
 ```
-Once the container is running create the database and the collection. Their names are in .env.local file
+To create the database and the collection execute the following:
+```
+npm run seed:import
+```
