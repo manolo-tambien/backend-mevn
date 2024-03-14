@@ -12,7 +12,7 @@ Backend made of:
 Follow the next configurations to setup correctly
 ### Install Mongo on Docker container
 ```
-docker pull mongo
+docker pull mongo:5.0
 docker run --name mongo-db -d -p 27017:27017 mongo
 docker ps
 ```
