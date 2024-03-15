@@ -16,6 +16,7 @@ docker pull mongo:5.0
 docker run --name mongo-db -d -p 27017:27017 mongo
 docker ps
 ```
+It is required to have the correct files with the data on /data directory
 To create the database and the collection execute the following:
 ```
 npm run seed:import
