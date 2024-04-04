@@ -1,10 +1,15 @@
 import dotenv from 'dotenv'
 import colors from 'colors'
-import { db } from '../config/db.js'
-import Services from '../models/Services.js'
+import { db } from '../config/db.js'
+//import Services from '../models/Services.js'
+//import { services } from './beautyServices.js'
+
+// Define the structure of the CuentaEspejo structure in database
 import CuentasEspejo from '../models/CuentaEspejo.js'
-import { services } from './beautyServices.js'
+// Represent the exact data of the table on database
 import { cuentasEspejo } from "./cuentasEspejo.js";
+
+// Add here the proper imports that you want add to the seed process...
 
 dotenv.config()
 await db()

@@ -55,5 +55,5 @@ const PORT = process.env.PORT || 4000
 
 // arrancar la app
 app.listen(PORT, () => {
-    console.log( colors.blue( 'El servidor se esta ejecutando en el puerto:'), colors.blue.bold(PORT ))
+    console.log( colors.green( 'El servidor se esta ejecutando en el puerto:'), colors.bgWhite.bold(PORT ))
 })

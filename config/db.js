@@ -8,7 +8,7 @@ export const db = async () => {
             dbName: 'CuentasEspejoDB'
         })
         const url = `${db.connection.host}:${db.connection.port}`
-        console.log( colors.cyan(`MongoDB se conectó correctamente: ${url}`))
+        console.log( colors.green(`MongoDB se conectó correctamente:`), colors.bgWhite(url))
     } catch (error) {
         console.log(`Error: ${error.message}`)
         process.exit(1)

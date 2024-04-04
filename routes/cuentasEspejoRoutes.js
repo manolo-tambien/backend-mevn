@@ -5,7 +5,7 @@ import authMiddleware from '../middleware/authMiddleware.js'
 const router = express.Router()
 
 router.route('/')
-    .get(getAllCuentasEspejo)
+    .get(authMiddleware, getAllCuentasEspejo)
 
 router.route('/:id')
     .put( updateCuentaEspejo)
