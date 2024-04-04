@@ -18,6 +18,7 @@ docker run --name mongo-db -d -p 27017:27017 mongo:5.0
 docker ps
 ```
 ## Step 2
+It is required to have the correct files with the data on /data directory
 
 To create the database and the collection execute the following:
 ```
